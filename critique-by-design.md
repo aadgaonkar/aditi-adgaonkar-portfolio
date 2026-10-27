@@ -1,59 +1,58 @@
-| [home page](https://cmustudent.github.io/tswd-portfolio-templates/) | [data viz examples](dataviz-examples) | [critique by design](critique-by-design) | [final project I](final-project-part-one) | [final project II](final-project-part-two) | [final project III](final-project-part-three) |
+| [home page](https://aadgaonkar.github.io/aditi-adgaonkar-portfolio/) | [data viz examples](dataviz-examples) | [critique by design](critique-by-design) | [final project I](final-project-part-one) | [final project II](final-project-part-two) | [final project III](final-project-part-three) |
 
-# Title
-Text here...
+# Critique 1: When did states give married women property rights?
 
-_For each step below, you should document your progress as you move forward.  In terms of tone, think of the writeup as though you're keeping journal of your step-by-step process.   You should include a any insights you gained from the critique method, and what it led you to think about when considering the redesign.  You should talk about how you moved next to the sketches, and any insights you gleaned from your user feedback.  Document what you changed based on the user feedback in your redesign.  Finally, talk about what your redesigned data visualization shows, why you selected the data visualization you did, and what you attempted to show or do differently._
+**Graphic:** NCSL "Map Monday" map of the year states adopted laws giving women the right to own property.
+Source: National Conference of State Legislatures (NCSL), "Map Monday: Written in 1839, Still the Law Today: Married Women's Property Act" (page headed "Married Women Granted Right to Control Their Property"), updated July 20, 2026.
 
-_You can include screenshots, sketches or other artifacts with your narrative to help tell the story of how you moved through the process.  Again, make sure to avoid including any personally identifying information about your interviewees (don't list full names, etc.).  While this template serves as a guide, make sure to reference the assignment writeup on Canvas for the official guidance.  This template does not include all guidance mentioned on the assignment page._
+![Original NCSL map of the year states adopted laws giving women the right to own property](images/ncsl-original-map.png)
 
-## Step one: the visualization
+## What I see first
+My eyes went to the large western states on the dark map before I read the title. I could tell the map compares states, but I couldn't tell which states acted first. I had to keep looking from the map to the legend to decode the colors.
 
-_Include link to the original data visualization (or screenshot - make sure to correctly cite your sources, etc.).  Include paragraph or two on why you selected this particular data visualization.  For obvious reasons, the data visualization you select should come from a publicly accessible source._
+Looking closer, the legend runs from 1848-1859 to 1940-1959, but it skips from 1900-1919 to 1940-1959. Does that mean no states fall in 1920-1939, or is an interval missing? The map doesn't say. The teal, red, blue and green also look like separate categories rather than a timeline. Small Northeast states are hard to identify, and the "Switch View" button makes this feel like a screenshot instead of a finished static chart.
 
-## Step two: the critique
-_Don't forget to complete the Google Form found on the assignment page.  You can summarize your thoughts here._
+My main question was: what should I learn from this map? Is it showing where change started, how it spread, or when my state passed a law?
 
-## Step three: Sketch a solution
+## What I like, dislike and wish I saw
 
-## Step four: Test the solution
+| Design dimension | Like | Dislike / wish |
+|---|---|---|
+| Typography | The title tells me this is a map of when states passed laws. | The title is small, and "women" sounds broader than laws about *married* women. I'd enlarge it, name married women, and explain that the laws varied by state. |
+| Color | Filled states show that different regions fall into different periods. | Seven unrelated colors make the years hard to read in order. I'd use seven shades of one blue-green, light for early and dark for late. |
+| Visualization type | A U.S. map suits state laws, and the familiar outline helps me find regions. | Large states stand out more than small ones even though each state is one observation. I'd keep the map but add a state lookup and a Northeast callout. |
+| Cognition | The legend lets me find a state's period if I take the time. | Reading each state takes repeated trips between the map and key. A short note on the legal subject and a direct lookup would help. |
+| Scale | State boundaries fit the data, and the legend shows periods rather than exact years. | The periods are uneven and jump from 1900-1919 to 1940-1959 without explanation. I'd keep the verified groupings but explain the missing interval. |
 
-_Before you conduct your interviews, prepare a simple script.  Use this as a guide and as a way to take notes as you go forward. Come up with your own list of questions you want to ask for the selected visualization. Keep the questions broad so you can get the most value out of your feedback. Then, document answers to your questions here._
+## Three changes I would make
 
-Questions to ask (modify these for your own interviews): 
+1. **Use an ordered color scale instead of seven unrelated colors.** Assign the seven existing periods seven ordered blue-green shades, light for earlier adoption and dark for later, and keep the date-range labels. This makes the time pattern easier to scan.
+2. **Make the title more specific.** Use "When states adopted married women's property laws" with the subtitle "Timing differed across states, and the laws did not grant identical rights." This is more precise about who gained rights and what the laws meant.
+3. **Help readers find specific states.** Use selective two-letter state labels, with a small Northeast inset for states too narrow to label. That makes individual states easier to identify without cramming names into the map.
 
-- Can you tell me what you think this is?
+## Final design recommendations
 
-- Can you describe to me what this is telling you?
+**1. Make adoption periods readable.** Keep the same states and seven source date categories, but replace the rainbow with an ordered blue-green scale, earliest to latest: `#E6F3F1`, `#C5E3DC`, `#98CFC3`, `#65B5A8`, `#338F8A`, `#1C676F`, `#123E54`. Put the legend right next to the map, list each interval in chronological order, and label the scale "Earlier adoption" to "Later adoption." Use 11 pt dark text and narrow white state borders, and test the palette in grayscale and a color-vision simulator. Do not invent a 1920-1939 category; check the source first. If there are truly no observations, add the note "No states shown for 1920-1939" next to the legend.
 
-- Is there anything you find surprising or confusing?
+**2. Explain the subject and lead with the point.** Replace the heading with "When states adopted married women's property laws" in 21 pt bold, add the 12 pt subtitle "Timing differed across states, and the laws did not grant identical rights," and add the note "Colors show adoption periods, not exact enactment years or equal legal protections." Keep the source in 9 pt below the map. For a static version, crop out "Switch View" and replace the black canvas with off-white (`#FAFBFC`) and dark gray (`#263238`) text.
 
-- Who do you think is the intended audience for this?
+**3. Make small states findable.** Use two-letter abbreviations only where they fit at 8 pt or larger. For the crowded Northeast, add a small enlarged inset with thin leader lines and readable labels, with each state's color matching the main map. Add an optional alphabetical lookup titled "State | Adoption period," filled only with the ranges the source actually supplies.
 
-- Is there anything you would change or do differently?
+## Good Charts Matrix score
 
-Results: 
+![Good Charts Matrix showing the original graphic scored at -3 design execution and -2 contextual awareness](images/good-charts-matrix.png)
 
-_Don't identify or share personally identifiable information (PII) about the people you spoke to._
+**Design execution: -3.** A recognizable U.S. map is a reasonable form for state laws, but the mixed colors, small title and separate legend make comparison harder.
+**Contextual awareness: -2.** The topic is important, yet the map doesn't explain how the laws differed or why the timeline omits 1920-1939.
+Both scores describe the original image, not my redesign.
 
-
-| Question | Interview 1 | Interview 2 |
-|----------|-------------|-------------|
-|          |             |             |
-|          |             |             |
-|          |             |             |
-
-Synthesis: 
-
-_What patterns in the feedback emerge?  What did you learn from the feedback?  Based on this feedback, come up with what design changes you think might make the most sense in your final redesign._
-
-## Step five: build the solution
-
-_Include and describe your final solution here. It's also a good idea to summarize your thoughts on the process overall. When you're done with the assignment, this page should all the items mentioned in the assignment page on Canvas(a link or screenshot of the original data visualization, documentation explaining your process, a summary of your wireframes and user feedback, your final, redesigned data visualization, etc.)._
+## Reflection
+I relied mostly on what I noticed myself: the map and legend felt disconnected, and the smaller states were hard to identify. Reviewing my ideas for new problems showed that similar neighboring shades and crowded labels could undo them, so I chose selective labels with an inset. I also kept the map's source-defined periods instead of inventing exact years. I still want the underlying data checked to explain the 1920-1939 jump. A cleaner design can't fix gaps in the source documentation.
 
 ## References
-_List any references you used here._
+- Berinato, S. (2016). *Good charts: The HBR guide to making smarter, more persuasive data visualizations.* Harvard Business Review Press.
+- Berinato, S. (2019). *Good Charts Workbook: Tips, tools, and exercises for making better data visualizations* (Chapter 1: Controlling Color). Harvard Business Review Press.
+- National Conference of State Legislatures. (2026, July 20). Map Monday: Written in 1839, still the law today: Married Women's Property Act. https://www.ncsl.org/resources/map-monday-married-women-granted-right-to-control-their-property
 
 ## AI acknowledgements
-_If you used AI to help you complete this assignment (within the parameters of the instruction and course guidelines), detail your use of AI for this assignment here._
-
+I used a generative AI assistant to critique my three recommendations and to suggest three of its own. I made the final decisions. Claude also helped me write up this page from my submitted critique.
