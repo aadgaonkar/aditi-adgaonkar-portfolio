@@ -5,7 +5,7 @@
 **Graphic:** NCSL "Map Monday" map of the year states adopted laws giving women the right to own property.
 Source: National Conference of State Legislatures (NCSL), "Map Monday: Written in 1839, Still the Law Today: Married Women's Property Act" (page headed "Married Women Granted Right to Control Their Property"), updated July 20, 2026.
 
-![Original NCSL map of the year states adopted laws giving women the right to own property](images/ncsl-original-map.png)
+![Original NCSL map of the year states adopted laws giving women the right to own property](ncsl-original-map.png)
 
 ## What I see first
 My eyes went to the large western states on the dark map before I read the title. I could tell the map compares states, but I couldn't tell which states acted first. I had to keep looking from the map to the legend to decode the colors.
@@ -40,7 +40,7 @@ My main question was: what should I learn from this map? Is it showing where cha
 
 ## Good Charts Matrix score
 
-![Good Charts Matrix showing the original graphic scored at -3 design execution and -2 contextual awareness](images/good-charts-matrix.png)
+![Good Charts Matrix showing the original graphic scored at -3 design execution and -2 contextual awareness](good-charts-matrix.png)
 
 **Design execution: -3.** A recognizable U.S. map is a reasonable form for state laws, but the mixed colors, small title and separate legend make comparison harder.
 **Contextual awareness: -2.** The topic is important, yet the map doesn't explain how the laws differed or why the timeline omits 1920-1939.
