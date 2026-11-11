@@ -1,105 +1,153 @@
-| [home page](https://aadgaonkar.github.io/aditi-adgaonkar-portfolio/) | [data viz examples](dataviz-examples) | [critique by design](critique-by-design) | [protein cost redesign](protein-cost-redesign) | [final project I](final-project-part-one) | [final project II](final-project-part-two) | [final project III](final-project-part-three) |
+| [Home](./) | [Data viz examples](dataviz-examples) | [Critique 1](critique-by-design) | **[Protein cost redesign](protein-cost-redesign)** | [Final project I](final-project-part-one) | [Final project II](final-project-part-two) | [Final project III](final-project-part-three) |
 
 # Critique by Design: How Much Does 30g of Protein Really Cost?
 
-## Why I chose this visualization
+**MakeoverMonday redesign | Tableau Public | November 2026**
 
-For this assignment, I chose *How Much Does 30g of Protein Cost?*, an infographic by The Bodybuilding Dietitians (2021), featured in the February 2023 MakeoverMonday challenge. It compares ten common foods on the cost of getting the same 30 grams of protein and shows the corresponding calories. I liked the practical question behind it: a grocery shopper may want affordable protein, but package prices alone don't give a fair comparison.
+This project follows the same process I would use to improve a product experience: **identify a communication problem, sketch a solution, ask users to interpret it, then iterate**. I selected a professional infographic that compares the estimated price and calorie content of ten foods providing the same amount of protein. The goal was not to change the story or update food prices. It was to make the existing comparison easier to read.
 
-The original graphic has a useful premise and recognizable foods. It also gave me a clear opportunity to redesign something that was already informative rather than just replace a chart for the sake of it. My goal was to make **cost and calories equally easy to compare**, without losing the original's simple ranking of protein sources.
+**[Explore my redesigned dashboard in Tableau Public](https://public.tableau.com/app/profile/aditi.adgaonkar/viz/Book2_17943470761440/Dashboard1)** · [Jump to the final design](#step-5-my-tableau-redesign)
 
-**Original visualization:** [The Bodybuilding Dietitians, *What Are The Cheapest High-Protein Foods?* (November 26, 2021)](https://www.thebodybuildingdietitians.com/blog/how-cost-effective-is-your-high-protein-diet)
+## Step 1: Select and understand the original visualization
 
-![Original infographic: How Much Does 30g of Protein Cost?](https://images.squarespace-cdn.com/content/v1/5d59f351fddabe00013cf3e6/f9b4b336-fe23-4260-aae3-19f6f8f72b8b/PROTEIN%2BCOST.png)
+The original infographic, **“How Much Does 30g of Protein Cost?”**, appeared in Jack Radford-Smith's November 26, 2021 article, *What Are The Cheapest High-Protein Foods?* for The Bodybuilding Dietitians. It was subsequently used as a source visualization for the MakeoverMonday 2023 Week 8 protein-cost challenge. I chose it because the question is immediately relatable: is a food that seems expensive by the package actually expensive when measured by the amount of protein it provides?
 
-*Original infographic by The Bodybuilding Dietitians. The chart compares cost per 30 grams of protein, with calorie values written inside the bars. Prices were sourced from Woolworths Australia.*
+**[View the original article and infographic](https://www.thebodybuildingdietitians.com/blog/how-cost-effective-is-your-high-protein-diet)**
 
-## Step 1: Understanding the original
+![Original 2021 infographic showing a vertical ranked bar chart of ten protein foods, with calories printed inside the cost bars](https://images.squarespace-cdn.com/content/v1/5d59f351fddabe00013cf3e6/f9b4b336-fe23-4260-aae3-19f6f8f72b8b/PROTEIN%2BCOST.png)
 
-The chart uses vertical bars to compare the cost of obtaining 30 grams of protein from different foods, from chicken breast and whey protein isolate to salmon fillets and Quorn. Calories are supplied as labels within the cost bars. Its likely audience includes grocery shoppers, students, and people interested in fitness or eating more protein on a budget.
+*Original: The Bodybuilding Dietitians (2021). Used here for critique and attributed to its creator. Price source listed as Woolworths Australia. The vertical bars encode cost for 30g of protein; the numbers written inside the bars indicate calories.*
 
-This is a **data-driven, declarative** chart in the *Good Charts* framework: it is making a particular comparison for readers rather than supporting open-ended analysis.
+The infographic compares Quorn, salmon fillets, a Musashi protein bar, lean beef, egg whites, cottage cheese, low-fat yogurt, firm tofu, whey protein isolate, and chicken breast. The price scale runs from zero to about five Australian dollars. Calories are shown for the food quantity needed to provide 30g of protein, not for a generic serving size. The original article also notes that price is not a complete measure of nutritional quality.
 
-## Step 2: Critique using Stephen Few's Effectiveness Profile
+**Intended audience.** The likely readers are grocery shoppers interested in protein and affordability, especially students, athletes, and fitness-oriented consumers. Because the source is an Australian dietitian's website, the pricing context is local rather than a universal ranking of foods. In *Good Charts* terms, this is a **data-driven, declarative** graphic: it presents a defined comparison, rather than inviting open-ended exploration.
 
-I evaluated the chart using Stephen Few's Data Visualization Effectiveness Profile. The 1–10 ratings helped me separate what the chart communicates well from what could be improved.
+## Step 2: Critique with Stephen Few's Data Visualization Effectiveness Profile
 
-| Criterion | Rating | My reasoning |
+I applied the seven criteria in Stephen Few's effectiveness profile, using a 1–10 scale to distinguish strengths from weaknesses. The scores reflect my evaluation, not a statistical measurement of quality.
+
+| Criterion | Score | Why I gave this score |
 |---|---:|---|
-| Usefulness | 8/10 | Comparing the cost of a common amount of protein is practical for grocery decisions, although prices vary by place and time. |
-| Completeness | 6/10 | It includes food names, cost bars, and calories, but does not label every exact cost or explain the full calculation for each product. |
-| Perceptibility | 6/10 | Relative costs are fairly easy to scan; comparing calorie numbers embedded inside the bars takes more effort. |
-| Truthfulness | 7/10 | The 30g protein standard is consistent, and the retailer is named, but exact underlying product prices are not supplied with the chart. |
-| Intuitiveness | 8/10 | The bar chart is familiar, although mixing calorie labels into the cost bars may imply a relationship not represented by bar height. |
-| Aesthetics | 7/10 | Food pictures make the topic approachable but also add visual clutter, alongside angled product names. |
-| Engagement | 7/10 | The everyday question and recognizable foods make the chart interesting, but the design does not invite easy comparison of both measures. |
+| **Usefulness** | **8/10** | Comparing the price of an equal amount of protein answers a useful shopping question. However, a 2021 snapshot from a single retailer does not directly describe other stores or present-day costs. |
+| **Completeness** | **6/10** | Food names, a cost scale and calorie labels are present, but there are no exact dollar labels, product-level calculations, or individual price records. A reader cannot fully reproduce the numbers from the infographic alone. |
+| **Perceptibility** | **6/10** | The vertical bars make the rough price ranking visible, but diagonal category labels slow scanning, and calories must be read one value at a time instead of compared by position or length. |
+| **Truthfulness** | **7/10** | A common 30g-protein denominator is a fair basis for the intended cost comparison, and the retailer is identified. The limits are missing calculation details and the risk of interpreting a historic, approximate price ranking as current shopping advice. |
+| **Intuitiveness** | **8/10** | A ranked bar chart is familiar and its question-based headline is easy to follow. The calorie labels inside price bars, however, can be mistaken for another part of the bar's cost encoding. |
+| **Aesthetics** | **7/10** | Recognizable product images help make the comparison approachable, but their irregular size and placement compete with labels and bars. |
+| **Engagement** | **7/10** | The topic invites a reader to check familiar foods, but the chart does little to support the natural follow-up: “Which food has both relatively low cost and relatively low calories?” |
 
-### What worked and what didn't
+### What was effective, and what needed to change?
 
-The strongest design decision is to standardize every food to 30 grams of protein. That makes the comparison more meaningful than simply comparing prices per package. The original also ranks foods by cost and uses pictures to help identify products quickly.
+The **strongest choice is the 30g-protein denominator**. Comparing packages at the register would mix different package sizes and protein densities, while comparing the same protein quantity lets a reader assess affordability more consistently. The simple price ranking is also appropriate; I did not want to replace it with an unfamiliar graphic for the sake of novelty.
 
-My biggest criticism is that the chart introduces **two useful measures but visually prioritizes only one**. Bar heights encode cost, while calories appear as numbers inside those same bars. Readers can readily see the cost ranking, but they have to read and mentally compare each number to understand the calorie differences. The large food photographs and diagonal labels also make the graphic busier than it needs to be. Finally, the lack of exact cost labels and detailed calculation data limits reproducibility.
+The **central weakness is an imbalance between the two measures**. Price is encoded visually, but calories are relegated to numbers printed inside price bars. This requires the reader to scan back and forth, memorize calorie figures, and mentally compare them. The slanted labels and product photos add more effort without helping the calorie comparison. Exact costs are not stated, even though price is the headline variable.
 
-A lower cost for protein does not necessarily mean a food is nutritionally preferable: foods differ in other nutrients, convenience, and dietary suitability. The original article itself emphasizes eating a variety of protein sources.
+There is an important *interpretation* issue too. Low cost does not establish that a food is healthier, more convenient, or appropriate for everyone. The source article itself encourages a varied diet. In the redesign I wanted to preserve that distinction rather than imply a nutritional recommendation.
 
-### How this compares with *Good Charts*
+### How useful is Few's approach compared with *Good Charts*?
 
-Stephen Few's profile made me evaluate the visualization in a more structured way. Instead of relying on whether I liked the design, I considered usefulness, completeness, accuracy, clarity, intuitiveness, aesthetics, and engagement. *Good Charts*, by contrast, helped me ask what kind of communication this was and what the intended audience needed to understand. I found the two methods complementary: **Good Charts helped frame the purpose; Few helped identify weaknesses.**
+Few's rubric helped turn a general reaction (“this looks busy”) into **specific issues that could guide a redesign**: data completeness, mark encoding, label legibility, and audience usefulness. It also forced me to record what was working instead of treating the original as simply bad.
 
-One limitation of the effectiveness profile is that the rating categories overlap. Perceptibility and intuitiveness, for example, can be difficult to separate, and the scores still reflect my judgment. The framework also does not directly show whether a real viewer can complete a task successfully. This is why testing the proposed redesign was important.
+Chapter 3 of Scott Berinato's *Good Charts* begins one step earlier, by asking whether the visualization is conceptual or data-driven and whether its purpose is declarative or exploratory. That framing mattered here because shoppers need a clear comparison, not a complex analytic tool. **Good Charts clarified the communication goal; Few identified how well the design accomplished it.**
 
-## Step 3: Sketching a solution
+I also saw limitations in Few's numerical ratings. Perceptibility and intuitiveness overlap, and the difference between a 6 and a 7 can become subjective. Neither a checklist nor a score proves that an audience understands the message. Observing real readers is a necessary complement to expert critique, which motivated my next steps.
 
-I made a simple, hand-drawn-style wireframe instead of jumping straight into Tableau. I kept the same ten foods but proposed **two aligned horizontal bar charts**, with cost on the left and calories on the right. I planned to order the foods by cost so readers could compare the same row across the two measures.
+## Step 3: Sketch a solution before opening Tableau
 
-![Simple hand-drawn-style wireframe for the protein cost redesign](protein-cost-wireframe.png)
+I prepared a deliberately simple **hand-drawn-style concept** rather than polishing an illustration first. The central proposal was to keep the same foods in the same rows, show a **horizontal cost bar chart on the left**, and add a **separate horizontal calorie bar chart on the right**. The price ranking would stay visible, while calories would become a genuine visual comparison.
 
-*Wireframe concept, not a data-accurate chart. Bar lengths in the sketch are illustrative; the final bars use the reconstructed dataset.*
+![Hand-drawn-style wireframe with aligned cost and calorie bars, food names, and critique notes](protein-cost-wireframe.png)
 
-The sketch responded directly to the critique: horizontal names would be easier to read, separate bars would make both measures visually comparable, and the final chart would show numerical values with the appropriate units.
+*AI-generated hand-drawn-style wireframe used for discussion. Its bar lengths are schematic and not intended as actual measured values.*
 
-## Step 4: Testing with two people
+| Observation from critique | Proposed design response |
+|---|---|
+| Hard to compare calories | Add a second set of bars on a separate calorie axis. |
+| Angled labels require effort | Use horizontal food names, aligned with the same rows in both views. |
+| Exact costs not shown | Label the reconstructed estimates explicitly as approximations. |
+| Both measures feel mixed together | Use distinct colors and clear headers for AUD and kcal. |
+| Pricing context is easy to miss | Put the source, 2021 time context, and reconstruction limitations near the chart. |
 
-I shared the wireframe with two students and asked what it showed, whether comparing cost and calories was straightforward, what felt confusing, and what they would change. These are summaries of the feedback rather than verbatim interview transcripts.
+A second idea was to use a scatterplot of cost versus calories. I rejected it for the main design because a ranked bar chart better serves the original practical question (“What is cheapest?”), while two aligned charts preserve price order and still expose calorie differences. The sketch was therefore a design hypothesis, not a claim that the problem had already been solved.
 
-**Participant 1 (university student):** The participant understood that the design compared foods based on cost and calories and found the side-by-side layout easy to follow. They agreed that the sketch needed exact values and a clearer currency label, because the bars alone did not communicate the size of the differences.
+## Step 4: Test the wireframe with two readers
 
-**Participant 2 (student familiar with data visualization):** The participant also found the layout straightforward. They agreed that units and context mattered, especially clarifying that the values referred to enough food to provide **30 grams of protein**, rather than an ordinary serving size.
+I showed the wireframe to two people and gathered their reactions to its readability and clarity. The questions focused on what the graphic showed, what was easy or confusing, whether a reader could compare cost and calories, and what they would change. The notes below are **paraphrases of feedback that the participants agreed with**, not quotations or verbatim transcripts; I have not attributed names or identifiable details.
 
-### What I learned and changed
+| Feedback topic | Participant 1 | Participant 2 |
+|---|---|---|
+| **Initial interpretation** | Understood that foods were being compared on price and calories. | Understood the two-variable comparison and the aligned food rows. |
+| **What worked** | Found the side-by-side layout easier to follow than reading calories inside price bars. | Found the simpler layout readable and the horizontal categories straightforward. |
+| **What needed clarification** | Wanted actual cost figures and a clear currency, rather than only schematic bar lengths. | Wanted explicit units and a statement that both measures apply to the amount of food providing 30g of protein. |
+| **Suggested improvement** | Add numeric value labels and identify AUD. | Label both axes clearly and explain the common denominator. |
 
-Both participants responded positively to the simpler side-by-side layout, but the feedback made me realize that removing clutter is only helpful if the remaining labels are precise. I retained the two aligned charts and added cost and calorie values directly beside their bars. I clarified the currency (AUD), kept a common 30g protein basis, and added a source and reconstruction note. I also used different colors for the two measures so it was clear that they represented different quantities.
+### What I learned, and what changed
 
-## Step 5: Final Tableau redesign
+The participants agreed on the broad direction, but their suggestions emphasized different risks: **Participant 1 focused on actionable numbers**, while **Participant 2 focused on avoiding a misleading interpretation of the units**. The first response influenced the use of value labels; the second led me to make “per 30g of protein” explicit in the axis titles and source note.
 
-The final dashboard uses a blue horizontal bar chart for estimated cost and a purple horizontal bar chart for calories. Both charts use the same food order, sorted by cost, so a reader can move across a row without searching for a matching category. The value labels make exact reading easier than in the original, while the two charts preserve the differences between dollars and kilocalories.
+After this test I kept the aligned layout and introduced blue cost bars, purple calorie bars, clear numerical labels, and a note that the prices are approximations derived from the original visualization. The important lesson was that removing clutter is only successful if the remaining chart provides enough context to stand on its own.
 
-**[Open the final interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/aditi.adgaonkar/viz/Book2_17943470761440/Dashboard1)**
+*Limit of this test:* These were two qualitative reactions, not a representative usability study. I did not measure reading time or error rates, and therefore cannot claim the redesign is quantitatively faster or more accurate.
 
-<iframe src="https://public.tableau.com/views/Book2_17943470761440/Dashboard1?:showVizHome=no&:embed=true" width="100%" height="800" style="border:0;" title="Protein cost and calories dashboard" loading="lazy"></iframe>
+## Step 5: My Tableau redesign
 
-### Data and interpretation notes
+I created the final visualization in Tableau Public using two aligned horizontal bar charts. The blue chart ranks food sources by **estimated AUD cost per 30g protein**; the purple chart shows **calories for the same 30g protein**. Both preserve the same row order, so a reader can look straight across to compare the measures. Exact calorie labels and clearly marked approximate cost labels reduce the need to interpret bar lengths alone.
 
-The source infographic publishes calorie values for each food and visual bar heights for prices, **not a downloadable table of exact prices**. For this redesign, I transcribed the ten calorie values and reconstructed approximate 2021 AUD costs from the original chart's vertical axis, rounded to the nearest AUD $0.10. Consequently, **the cost figures are estimates, not exact Woolworths transaction prices**, and should not be used as current grocery-price advice. This is a recreation of the original 30g comparison, not a new price survey.
+**[Open the interactive Tableau dashboard](https://public.tableau.com/app/profile/aditi.adgaonkar/viz/Book2_17943470761440/Dashboard1)**
 
-The redesign is therefore best understood as an exercise in communicating an existing comparison more clearly, with its data limitations disclosed. The nutritional qualities of a food extend beyond cost and calories alone.
+![Screenshot of the completed Tableau dashboard with two aligned horizontal bar charts](protein-cost-tableau-preview.png)
 
-## Reflection
+*Screenshot of my Tableau Public dashboard. The interactive version is linked above. Values reflect the original 2021 comparison; cost estimates are not a current grocery survey.*
 
-This project showed me that redesigning a chart is not the same as making it more decorative. The original already had a useful question and a sensible price ranking. Its weakness was that it made one variable much easier to compare than the other. The most useful change was not a new chart type, but separating cost and calories while keeping the food rows aligned.
+<iframe src="https://public.tableau.com/views/Book2_17943470761440/Dashboard1?:showVizHome=no&amp;:embed=true" width="100%" height="650" title="Interactive Tableau dashboard comparing protein costs and calories" loading="lazy" style="border:0;"></iframe>
 
-The critique helped identify the issue, the sketch made the solution concrete, and feedback revealed the need for clearer units and values. In Tableau, I had to pay attention to sorting, consistent row order, labeling, and layout. I would improve this project further by obtaining original item-level pricing data to replace the approximate values, and by testing the finished dashboard with readers to see whether they can find meaningful comparisons quickly.
+### What the redesign makes easier to see
 
-## Sources and references
+The cost ranking is more legible because the foods are listed horizontally and the estimated dollar amounts are explicit. Looking across the rows also reveals why a low price is not necessarily the same as a low calorie amount: **firm tofu and low-fat yogurt have similar estimated costs for 30g of protein, but the source chart reports 278 kcal for tofu and 178 kcal for yogurt**. Likewise, egg whites are about 126 kcal compared with 197 kcal for cottage cheese, while the reconstructed costs put egg whites higher in price. These comparisons were possible in the original, but took more manual reading.
 
-- Radford-Smith, J. (2021, November 26). [*What Are The Cheapest High-Protein Foods?*](https://www.thebodybuildingdietitians.com/blog/how-cost-effective-is-your-high-protein-diet). The Bodybuilding Dietitians. Original chart and calorie values; cost source identified as Woolworths Australia.
-- [MakeoverMonday](https://www.makeovermonday.co.uk/). February 20, 2023 challenge featuring the protein-cost visualization.
-- Few, S. [*Data Visualization Effectiveness Profile*](https://www.perceptualedge.com/articles/visual_business_intelligence/data_visualization_effectiveness_profile.pdf).
-- Berinato, S. (2016). *Good Charts: The HBR Guide to Making Smarter, More Persuasive Data Visualizations*. Harvard Business Review Press (Chapters 3–4).
-- [Final redesign on Tableau Public](https://public.tableau.com/app/profile/aditi.adgaonkar/viz/Book2_17943470761440/Dashboard1).
+The redesign intentionally uses **two different scales** because dollars and kilocalories have different units. The lengths of bars across the two charts should not be directly compared to each other; the appropriate comparisons are *within* each measure and *across food rows*.
+
+### Reconstructing the source data transparently
+
+The original infographic supplies **ten exact displayed calorie labels** and approximate price positions on an AUD dollar axis, but it does not publish a table of individual price records or the underlying product calculations. I transcribed the calories and estimated costs from the chart's y-axis, rounded to the nearest A$0.10. The price figures below are **reconstructions from a published graphic, not verified retailer receipts or current price data**. To avoid false precision, the `~` symbol is intentional.
+
+[Download the Tableau input CSV, with the provenance field for every row](protein-cost-data.csv)
+
+| Food | Reconstructed cost per 30g protein | Calories per 30g protein | Evidence and limitation |
+|---|---:|---:|---|
+| Quorn | ~A$4.20 | 200 kcal | Cost read approximately from the original y-axis; calorie label transcribed |
+| Salmon fillet | ~A$4.10 | 288 kcal | Cost read approximately from the original y-axis; calorie label transcribed |
+| Protein bar (Musashi) | ~A$3.30 | 242 kcal | Cost read approximately from the original y-axis; calorie label transcribed |
+| Beef (5% fat) | ~A$3.00 | 193 kcal | Cost read approximately from the original y-axis; calorie label transcribed |
+| Egg whites | ~A$2.80 | 126 kcal | Cost read approximately from the original y-axis; calorie label transcribed |
+| Cottage cheese | ~A$2.20 | 197 kcal | Cost read approximately from the original y-axis; calorie label transcribed |
+| Yogurt (<1% fat) | ~A$1.70 | 178 kcal | Cost read approximately from the original y-axis; calorie label transcribed |
+| Firm tofu | ~A$1.70 | 278 kcal | Cost read approximately from the original y-axis; calorie label transcribed |
+| Whey protein isolate (WPI) | ~A$1.40 | 127 kcal | Cost read approximately from the original y-axis; calorie label transcribed |
+| Chicken breast | ~A$1.30 | 140 kcal | Cost read approximately from the original y-axis; calorie label transcribed |
+
+**Reproduction method:** (1) use the original author graphic from the linked 2021 article; (2) identify each food and transcribe its printed calorie value; (3) estimate bar heights using the original dollar-axis grid lines, with 0 at the chart baseline; (4) round estimated prices to A$0.10; (5) preserve the full set of ten foods and 30g basis in the Tableau input file. Costs shown as ties after rounding (such as yogurt and tofu) should not be interpreted as exact equal prices.
+
+**Important:** The associated 2023 MakeoverMonday challenge was also described in some published redesigns using a different, 20g-protein dataset. This project instead recreates the **original 2021 infographic's 30g-protein comparison throughout**. I have not mixed 20g and 30g values or presented them as interchangeable.
+
+## Step 6: Reflection and limitations
+
+This exercise changed how I think about redesigns. The biggest improvement did not require adding complexity. The original chart already had an engaging question and a defensible comparison basis. The problem was that cost and calories were both important, but only cost had a visual encoding. Keeping the ranked price comparison while introducing an aligned calorie chart made my design choices directly traceable to the critique.
+
+The wireframe helped me test the information hierarchy before spending time on Tableau formatting. The two readers’ feedback was useful because it questioned what I had left implicit: numerical labels, units, and the 30g standard. In Tableau, I learned that consistent sorting and row alignment matter as much as the chart type. I also learned that data provenance is part of a visualization's integrity. Reconstructing values from an old chart is acceptable only if I clearly communicate the uncertainty rather than present approximations as precise historical facts.
+
+**What I would do next:** If original retailer price records were available, I would rebuild the chart with those exact inputs and document the calculation of cost per 30g of protein. I would also test the finished dashboard on mobile and ask readers to answer specific comparison questions without guidance. I did not collect evidence for those additional tests here.
+
+## Sources and credits
+
+- Jack Radford-Smith (November 26, 2021). [*What Are The Cheapest High-Protein Foods?*](https://www.thebodybuildingdietitians.com/blog/how-cost-effective-is-your-high-protein-diet). The Bodybuilding Dietitians. Original infographic and calorie labels; the article identifies Woolworths Australia as its source of cost values.
+- MakeoverMonday (2023, Week 8). [MakeoverMonday data challenges](https://www.makeovermonday.co.uk/data/).
+- Stephen Few. [*Data Visualization Effectiveness Profile*](https://www.perceptualedge.com/articles/visual_business_intelligence/data_visualization_effectiveness_profile.pdf).
+- Scott Berinato (2016). *Good Charts: The HBR Guide to Making Smarter, More Persuasive Data Visualizations*, chapters 3–4. Harvard Business Review Press.
+- [My published Tableau dashboard](https://public.tableau.com/app/profile/aditi.adgaonkar/viz/Book2_17943470761440/Dashboard1).
 
 ## AI acknowledgment
 
-I used ChatGPT to help interpret the assignment instructions, organize my critique using Stephen Few's framework, draft and revise explanatory text, and develop the redesign approach and Tableau steps. I also used an AI image generator to produce the hand-drawn-style wireframe image; it represents my intended design rather than measured data. ChatGPT assisted in preparing a reconstructed CSV from the source chart and suggested formatting and layout improvements for the Tableau dashboard. I reviewed the visualization, built the dashboard in Tableau Public, and shared the wireframe with two people for feedback. I have disclosed that the original exact price data was not available and that the reconstructed costs are approximate.
+I used ChatGPT to interpret the assignment instructions, organize and revise the Stephen Few critique, compare the critique with *Good Charts*, prepare Markdown documentation, and troubleshoot the Tableau build. I also used AI image generation for the **hand-drawn-style wireframe**, which is a schematic design artifact rather than a hand-drawn original or a data-accurate chart. ChatGPT assisted with transcribing and approximating historical prices from the source visualization and preparing the Tableau CSV. I reviewed the original infographic, created and published the Tableau dashboard, and presented the wireframe to two participants. I used AI again to refine the portfolio writeup and source-methodology notes. The approximate price data and the limits of the feedback are disclosed above.
 
-[Back to portfolio homepage](https://aadgaonkar.github.io/aditi-adgaonkar-portfolio/)
+[← Back to portfolio homepage](./)

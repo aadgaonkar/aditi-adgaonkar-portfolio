@@ -1,0 +1,20 @@
+UPLOAD / REPLACE IN GITHUB REPOSITORY ROOT
+
+Files to upload or replace:
+- README.md (REPLACE your existing README.md; do not upload as README-updated.md)
+- protein-cost-redesign.md (REPLACE the existing file)
+- protein-cost-wireframe.png (already in repo; no need to replace if unchanged)
+- protein-cost-tableau-preview.png (NEW)
+- protein-cost-data.csv (NEW; values used for Tableau, cost approximations disclosed)
+
+Do not upload this instructions file or zip itself.
+
+After commit: open the public GitHub Pages homepage, click the assignment link, and check the original image, wireframe, Tableau preview, and direct Tableau link. Submit the working github.io URL (not github.com).
+
+Optional Tableau polish that requires editing your Tableau workbook:
+- Hide repeated Protein Source headers on the right-side calories chart.
+- Remove extra punctuation such as the trailing dot in 'Protein Calories.'
+- Make the subtitle read naturally without 'Subtitle:'.
+- Re-publish after any Tableau change, and confirm the public version reflects it.
+
+No one can promise a particular grade. The cost records are reconstructed, not source-verified. Interview responses are paraphrases, not fabricated quotations.
