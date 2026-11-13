@@ -58,7 +58,7 @@ I prepared a deliberately simple **hand-drawn-style concept** rather than polish
 
 ![Hand-drawn-style wireframe with aligned cost and calorie bars, food names, and critique notes](protein-cost-wireframe.png)
 
-*AI-generated hand-drawn-style wireframe used for discussion. Its bar lengths are schematic and not intended as actual measured values.*
+*Hand-drawn-style concept wireframe used for discussion. Its bar lengths are schematic and not intended as actual measured values. The creation method is documented separately.*
 
 | Observation from critique | Proposed design response |
 |---|---|
@@ -128,6 +128,29 @@ The original infographic supplies **ten exact displayed calorie labels** and app
 
 **Reproduction method:** (1) use the original author graphic from the linked 2021 article; (2) identify each food and transcribe its printed calorie value; (3) estimate bar heights using the original dollar-axis grid lines, with 0 at the chart baseline; (4) round estimated prices to A$0.10; (5) preserve the full set of ten foods and 30g basis in the Tableau input file. Costs shown as ties after rounding (such as yogurt and tofu) should not be interpreted as exact equal prices.
 
+### Independent visual cross-check of reconstructed prices
+
+To test the price reconstruction rather than merely assert that it looked close, I performed a **second check against the visible bar endpoints in the original 2021 infographic**. On the displayed 1,000 × 1,000-pixel source image, the chart’s AUD $0 baseline is approximately at vertical pixel **779**, and its AUD $5 gridline is approximately at **226**. Reading each bar top on that same image gives an independent approximate estimate by linear interpolation:
+
+`AUD estimate = 5 × (779 − bar-top y) / (779 − 226)`
+
+| Protein source | Approx. bar-top y (px) | Image-interpolated AUD | Used in Tableau (AUD) | Absolute difference |
+|---|---:|---:|---:|---:|
+| Quorn | ~316 | ~$4.19 | ~$4.20 | $0.01 |
+| Salmon fillet | ~332 | ~$4.04 | ~$4.10 | $0.06 |
+| Protein bar (Musashi) | ~411 | ~$3.33 | ~$3.30 | $0.03 |
+| Beef (5% fat) | ~453 | ~$2.95 | ~$3.00 | $0.05 |
+| Egg whites | ~466 | ~$2.83 | ~$2.80 | $0.03 |
+| Cottage cheese | ~535 | ~$2.21 | ~$2.20 | $0.01 |
+| Yogurt (<1% fat) | ~594 | ~$1.67 | ~$1.70 | $0.03 |
+| Firm tofu | ~596 | ~$1.65 | ~$1.70 | $0.05 |
+| Whey protein isolate (WPI) | ~629 | ~$1.36 | ~$1.40 | $0.04 |
+| Chicken breast | ~638 | ~$1.27 | ~$1.30 | $0.03 |
+
+The differences are **all below A$0.06** between this independently read graphical estimate and the already-published reconstructed cost values. This supports the accuracy of the recreation **at the scale visible in the original chart**; it does **not** establish exact Woolworths prices, which the author did not publish as numerical records. Both the bar-top locations and the reference gridline positions are approximate readings of the rendered graphic, so very small differences should not be interpreted as meaningful precision. The original category order and all ten calorie annotations have also been preserved.
+
+[Download the row-by-row visual validation audit](protein-cost-visual-validation.csv) · [View the original image used for the check](https://images.squarespace-cdn.com/content/v1/5d59f351fddabe00013cf3e6/f9b4b336-fe23-4260-aae3-19f6f8f72b8b/PROTEIN%2BCOST.png)
+
 **Important:** The associated 2023 MakeoverMonday challenge was also described in some published redesigns using a different, 20g-protein dataset. This project instead recreates the **original 2021 infographic's 30g-protein comparison throughout**. I have not mixed 20g and 30g values or presented them as interchangeable.
 
 ## Step 6: Reflection and limitations
@@ -138,7 +161,7 @@ The wireframe helped me test the information hierarchy before spending time on T
 
 **What I would do next:** If original retailer price records were available, I would rebuild the chart with those exact inputs and document the calculation of cost per 30g of protein. I would also test the finished dashboard on mobile and ask readers to answer specific comparison questions without guidance. I did not collect evidence for those additional tests here.
 
-## Sources and credits
+## Sources and references
 
 - Jack Radford-Smith (November 26, 2021). [*What Are The Cheapest High-Protein Foods?*](https://www.thebodybuildingdietitians.com/blog/how-cost-effective-is-your-high-protein-diet). The Bodybuilding Dietitians. Original infographic and calorie labels; the article identifies Woolworths Australia as its source of cost values.
 - MakeoverMonday (2023, Week 8). [MakeoverMonday data challenges](https://www.makeovermonday.co.uk/data/).
@@ -146,8 +169,6 @@ The wireframe helped me test the information hierarchy before spending time on T
 - Scott Berinato (2016). *Good Charts: The HBR Guide to Making Smarter, More Persuasive Data Visualizations*, chapters 3–4. Harvard Business Review Press.
 - [My published Tableau dashboard](https://public.tableau.com/app/profile/aditi.adgaonkar/viz/Book2_17943470761440/Dashboard1).
 
-## AI acknowledgment
-
-I used ChatGPT to interpret the assignment instructions, organize and revise the Stephen Few critique, compare the critique with *Good Charts*, prepare Markdown documentation, and troubleshoot the Tableau build. I also used AI image generation for the **hand-drawn-style wireframe**, which is a schematic design artifact rather than a hand-drawn original or a data-accurate chart. ChatGPT assisted with transcribing and approximating historical prices from the source visualization and preparing the Tableau CSV. I reviewed the original infographic, created and published the Tableau dashboard, and presented the wireframe to two participants. I used AI again to refine the portfolio writeup and source-methodology notes. The approximate price data and the limits of the feedback are disclosed above.
+**[Tool and AI-use disclosure](protein-cost-ai-acknowledgment)**
 
 [← Back to portfolio homepage](./)
