@@ -1,0 +1,11 @@
+Food,Approximate top of bar (px y),Chart baseline y (0 AUD),5 AUD gridline y,Measured cost from image (AUD),Tableau dataset cost (AUD),Absolute difference (AUD),Calories per 30g (original printed label),Measurement note
+Quorn,316,779,226,4.186,4.20,0.014,200,Bar-top pixel position manually approximated from displayed 1000px source image
+Salmon fillet,332,779,226,4.042,4.10,0.058,288,Bar-top pixel position manually approximated from displayed 1000px source image
+Protein bar (Musashi),411,779,226,3.327,3.30,0.027,242,Bar-top pixel position manually approximated from displayed 1000px source image
+Beef (5% fat),453,779,226,2.948,3.00,0.052,193,Bar-top pixel position manually approximated from displayed 1000px source image
+Egg whites,466,779,226,2.83,2.80,0.03,126,Bar-top pixel position manually approximated from displayed 1000px source image
+Cottage cheese,535,779,226,2.206,2.20,0.006,197,Bar-top pixel position manually approximated from displayed 1000px source image
+Yogurt (<1% fat),594,779,226,1.673,1.70,0.027,178,Bar-top pixel position manually approximated from displayed 1000px source image
+Firm tofu,596,779,226,1.655,1.70,0.045,278,Bar-top pixel position manually approximated from displayed 1000px source image
+Whey protein isolate (WPI),629,779,226,1.356,1.40,0.044,127,Bar-top pixel position manually approximated from displayed 1000px source image
+Chicken breast,638,779,226,1.275,1.30,0.025,140,Bar-top pixel position manually approximated from displayed 1000px source image
