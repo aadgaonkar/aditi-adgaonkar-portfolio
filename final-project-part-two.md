@@ -42,13 +42,15 @@ After questions 2, 4, and 5, ask readers to point to what informed their answer.
 
 ## User research findings
 
-| Reviewer | Background |
-|---|---|
-| P1 | Software developer |
-| P2 | Guitarist |
-| P3 | Doctor |
+I shared the Shorthand draft with three reviewers. The draft asks readers to consider foot traffic, asking rent, and nearby cafés when evaluating a storefront.
 
-All three reviewed the Shorthand draft and expressed general agreement with the story. I captured that reaction at the group level. I have no participant-level notes on how they interpreted individual charts or what they would do next. Their feedback is an initial reaction to the story, with follow-up needed to assess whether readers can apply it on their own.
+| Reviewer | Background | Recorded response |
+|---|---|---|
+| P1 | Software developer | Reviewed the draft and agreed with the overall argument. |
+| P2 | Guitarist | Reviewed the draft and agreed with the overall argument. |
+| P3 | Doctor | Reviewed the draft and agreed with the overall argument. |
+
+The common response was agreement with the story’s premise. My notes cover that overall reaction. They leave open how each reviewer interpreted the charts and what each would check first at a storefront. In a follow-up, I would ask each person the same question so I could compare their answers: “Looking at the Herald Square example, what would you check first before pursuing that storefront, and why?”
 
 ## Planned revisions for Part III
 
@@ -56,6 +58,7 @@ All three reviewed the Shorthand draft and expressed general agreement with the 
 |---|---|---|
 | All three reviewers expressed general agreement. I have no individual notes on how they would apply the comparison to a storefront. | Turn the Herald Square ending into a short checklist: pick an address, visit during planned opening hours, observe where people stop for coffee, and request a rent quote. | Ask each reader to name their next step and point to the evidence behind it without prompting. |
 | In my own review, the jump from nearby cafés to 7–9 a.m. foot traffic felt abrupt. | Introduce the weekday takeaway café before showing the pedestrian chart so the reader knows why the morning window matters. | Ask readers why the chart uses that time window and what the pedestrian count actually measures. |
+| Part I instructor feedback raised customer loyalty, brand recognition, and how long cafés have been operating. | Add questions to the storefront checklist about which cafés people recognize, what brings them back, and how long the places they mention have been open. | Ask readers what they would learn by talking to customers and checking café opening dates. |
 
 ## Conclusion
 
