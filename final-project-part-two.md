@@ -27,7 +27,7 @@ Part I feedback asked for a stronger connection between the visuals and the endi
 
 **Goal.** Find out whether readers can interpret the visuals and use them to decide what to investigate before choosing a café location.
 
-**Audience and recruitment.** The intended audience is first-time café owners. For this draft review, I shared the story with three people from different professional backgrounds to check whether readers could follow the charts and understand the decision they were meant to support.
+**Audience and recruitment.** The intended audience is first-time independent café owners who are comparing storefronts. For this initial review, I shared the draft with three readers from different professional backgrounds. Their feedback gives me an initial read on whether the story is understandable. To test whether the story is useful for the intended decision, I would recruit people actively considering their first café and owners who recently chose their first location. I would look for people who have compared at least two storefronts and ask them to apply the story to an address they are considering or have considered.
 
 **Interview script.** Ask readers to scroll through the draft and explain what they see before offering any clarifications. Ask permission before taking anonymous notes or using a direct quote.
 
@@ -38,6 +38,8 @@ Part I feedback asked for a stronger connection between the visuals and the endi
 5. If you were considering a storefront near Herald Square, what would you do next? Which part of the story helped you decide?
 6. Was there anything you had to reread or guess?
 
+After questions 2, 4, and 5, ask readers to point to what informed their answer. Record what each reader understood independently, where they needed a prompt, and whether they could name a concrete next step for a storefront.
+
 ## User research findings
 
 | Reviewer | Background |
@@ -46,12 +48,14 @@ Part I feedback asked for a stronger connection between the visuals and the endi
 | P2 | Guitarist |
 | P3 | Doctor |
 
-All three reviewed the Shorthand draft and expressed general agreement. That reaction is the feedback I captured at the group level. I have limited evidence about how individual readers interpreted each chart, and I did not record exact quotes or specific disagreements.
+All three reviewed the Shorthand draft and expressed general agreement with the story. I captured that reaction at the group level. I have no participant-level notes on how they interpreted individual charts or what they would do next. Their feedback is an initial reaction to the story, with follow-up needed to assess whether readers can apply it on their own.
 
 ## Planned revisions for Part III
 
-- **Explain why the morning window matters.** In my own review, the jump from nearby cafés to morning foot traffic felt abrupt. I’ll introduce the takeaway-café scenario before showing the 7–9 a.m. chart.
-- **Make the ending a concrete next step.** I’ll ask readers to pick one storefront, visit during the hours they plan to open, observe where people stop for coffee, and request a rent quote for that address. In a follow-up review, I’d ask readers to describe their next step in their own words.
+| Evidence or observation | Planned Part III change | How I would test it |
+|---|---|---|
+| All three reviewers expressed general agreement. I have no individual notes on how they would apply the comparison to a storefront. | Turn the Herald Square ending into a short checklist: pick an address, visit during planned opening hours, observe where people stop for coffee, and request a rent quote. | Ask each reader to name their next step and point to the evidence behind it without prompting. |
+| In my own review, the jump from nearby cafés to 7–9 a.m. foot traffic felt abrupt. | Introduce the weekday takeaway café before showing the pedestrian chart so the reader knows why the morning window matters. | Ask readers why the chart uses that time window and what the pedestrian count actually measures. |
 
 ## Conclusion
 
